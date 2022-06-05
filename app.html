@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="imagenes/favicon1.png">
+    <title>app Clínica Odontológica Universal</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="home.html">
+                    <img src="imagenes/logoPeq.png" alt="imagen del logo de la clínica">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse mIzq" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link aMenuPrinc me-5" href="pantallaInicio.html" alt="botón para regresar al index del sitio">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- interfaz visual -->
+    <section class="container text-center bWeb">
+        <!-- <h1 class="pt-5">Clínica Odontológica Universal</h1> -->
+        <img src="imagenes/bannerWeb.png" alt="imagen web de la clínica">
+        <div class="pt-5"></div>
+    </section>
+    <section class="container">
+        <div class="row dInstru">
+            <h1 class="fs-1 mb-5 text-center">Aplicación de registro de consultas y honorarios a pagar a los médicos</h1>
+            <p class="fs-3"><span class="fw-bold">Instrucciones:</span></p>
+            <p class="fs-3">1. Elija el <span class="fw-bold"> médico</span> que hizo la consulta</p>
+            <p class="fs-3">2. Ingrese a Registrar consultas, registre la cantidad y de click sobre <span class="fw-bold"> Registrar</span></p>
+            <p class="fs-3">3. De click sobre<span class="fw-bold"> Reportes</span> y luego sobre el <span class="fw-bold"> Reporte</span> que quiera obtener un resultado</p>
+        </div>
+        <!-- div para ubicación de la tabla -->
+        <div class="p-5" id="ubicTabla"></div>
+
+        <div class="d-flex justify-content-center">
+
+            <h4 class="text-dark fs-1 me-5 mt-5 mb-5">Médico:</h4>
+            <!-- quemado de datos de 15 registros en un combo select -->
+            <select id="proveedoresSlt" class="fs-3 mt-5 mb-5">
+	                <option value="1">Dra. Isabel Martínez</option>
+	                <option value="2">Dr. Pedro Alvarez</option>
+	                <option value="3">Dr. Alonso Soto</option>
+	                <option value="4">Dr. Guillermo Barrientos</option>
+	                <option value="5">Dr. Alvaro Calderón</option>
+	                <option value="6">Dra. Karla Obando</option>
+	                <option value="7">Dra. Maritza Picado</option>
+	                <option value="8">Dr. Uriel Barrantes</option>
+	                <option value="9">Dr. Kattia Briceño</option>
+	                <option value="10">Dra. Roxana Araya</option>
+                    <option value="11">Dra. Luisa Gallardo</option>
+                    <option value="12">Dr. Mario Alonso</option>
+                    <option value="13">Dra. Virginia Durán</option>
+                    <option value="14">Dra. Karol Almanza</option>
+                    <option value="15">Dr. Luis Camacho </option>
+            	</select>
+        </div>
+
+        <!--campo donde se digita la cantidad del producto -->
+        <button class="accordion tam1 fs-1 fw-bold">Registrar consultas</button>
+        <div class="panel">
+            <div class="row d-flex justify-content-center p-5">
+                <label for="cantFresasTxt" class="col-3 text-dark fs-3">Cantidad de consultas:</label>
+                <input class="col-3" id="cantFresasTxt" type="number">
+                <button class="btn btn-outline-dark fs-3 col-2 ms-5" id="registrarBtn">Registrar</button>
+            </div>
+        </div>
+
+        <button class="accordion tam1 fs-1 fw-bold">Reportes</button>
+        <div class="panel">
+            <div class="container-fluid row d-flex justify-content-center p-5">
+                <button class="btn btn-outline-primary fs-3 col-1 me-5" id="totalFresasBtn">Total</button>
+                <button class="btn btn-outline-primary fs-3 col-1 me-5" id="mayorProductorBtn">Mayor</button>
+                <button class="btn btn-outline-primary fs-3 col-1 me-5" id="menorProductorBtn">Menor</button>
+                <button class="btn btn-outline-primary fs-3 col-1 me-5" id="pagoBtn">Pago</button>
+                <button class="btn btn-outline-primary fs-3 col-2 me-5" id="restablecerBtn">Restablecer</button>
+                <!-- Recarga la aplicación web -->
+                <button class="btn btn-outline-primary fs-3 col-1 me-5" onclick="location.reload()">Iniciar</button>
+            </div>
+        </div>
+        <!-- botones informes -->
+
+
+        <!-- creacion de la tabla -->
+        <div class="row container-fluid">
+            <div class="row">
+                <table class="table" id="tabla"></table>
+            </div>
+            <p id="resultadoPr" class="text-center fs-1 fw-bold m-5"></p>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- carga de la programación web -->
+    <script src="js/app.js"></script>
+
+    <script src="js/acordeon.js"></script>
+</body>
+
+</html>

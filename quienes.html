@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- librería aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- librería ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/quienes.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/icon" href="imagenes/favicon1.png">
+
+    <title>Clínica dental, Página de quienes somos?</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(53,205,214);
+        background: linear-gradient(180deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%);">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="home.html">
+                    <img src="imagenes/logoPeq.png" alt="imagen del logo de la clínica">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse mIzq" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuHome" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-3 aMenuPrinc menuServicios" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item aMenuPrinc menuPrevencion" href="prevencion.html">Prevención</a></li>
+                                <li>
+                                    <a class="dropdown-item aMenuPrinc menuImplante" href="implantes.html">Implantes</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item aMenuPrinc menuEstetica" href="estetica.html">Estética</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuQuienes" href="quienes.html">Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuSonrisas" href="sonrisas.html"><i class="fas fa-plus"></i> Sonrisas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aMenuPrinc menuCitas" href="citas.html">Citas</a>
+                        </li>
+
+                        <div class="langWrap d-flex">
+                            <li class="nav-item lIdioma">
+                                <a class="nav-link" href="#" language='espanish' alt="botón para idioma español"><img src="imagenes/es.webp" alt="español" height="20px"></a>
+                            </li>
+                            <li class="nav-item lIdioma">
+                                <a class="nav-link" href="#" language='english' alt="botón para idioma inglés"><img src="imagenes/eu.webp" alt="inglés" height="20px"></a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <!-- <form class="d-flex ">
+                        <input class="form-control me-2 " type="search " placeholder="Buscar " aria-label="Search ">
+                        <button class="btn btn-outline-success " type="submit ">Buscar</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sección principal título y foto -->
+    <section class="tituloPrincQ container-fluid">
+        <div class="row">
+            <h1 class="animate__animated animate__backInLeft text-center fw-bold mt-3 mb-3 logoText">Clínica Odontológica Universal</h1>
+        </div>
+    </section>
+
+    <!-- sección de Conózcanos -->
+    <section class="subTituloPrincQ container">
+        <h2 class="fw-bold mt-3 ms-5 hConozcanos" style="font-size: 4rem;">Conózcanos</h2>
+        <hr class="raya">
+
+        <!-- sección fotográfica de los equipos -->
+        <section class="row container mt-5 sct-fotos sct-fotoBack">
+            <div class="col-12 col-md-5">
+                <div class="row">
+                    <div class="col-12" data-aos="fade-right" data-aos-duration="1750">
+                        <img id="myImg1" src="imagenes/equipoPrevencion.jpg" alt="foto del equipo de prevención" class="img-fluid puntero">
+                        <div id="modal1" class="modal" style="background-color: rgba(0, 0, 0, 0.8);">
+                            <!-- botón de cierre del modal -->
+                            <span class="close1">&times;</span>
+                            <!-- con &times; aparece la X en la imagen grande -->
+                            <!-- contenido del modal -->
+                            <img class="modal-content" id="img01">
+                            <!-- título del modal -->
+                            <div id="caption">
+                                <p class="text-center fs-3 mt-3 pFotoPrev" style="color: #fff">Dra. Martínez y Dr. Alvarez. Y la asistente Karina</p>
+                                <p class="text-center fs-2 pFotoPrev1" style="color: #fff">Equipo de Prevención</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 mb-3 puntero" data-aos="fade-up" data-aos-duration="1750">
+                        <img id="myImg2" src="imagenes/equipoEstetica.jpg" alt="foto del equipo de estética" class="img-fluid puntero">
+                        <div id="modal2" class="modal" style="background-color: rgba(0, 0, 0, 0.8);">
+                            <!-- botón de cierre del modal -->
+                            <span class="close2">&times;</span>
+                            <!-- con &times; aparece la X en la imagen grande -->
+                            <!-- contenido del modal -->
+                            <img class="modal-content" id="img02">
+                            <!-- título del modal -->
+                            <div id="caption">
+                                <p class="text-center fs-3 mt-3 pFotoEste" style="color: #fff">Dr. Calderón y Dra. Rímolo. Y las asistentes Bertha y Ana Sofía y el auxiliar Armando</p>
+                                <p class="text-center fs-2 pFotoEste1" style="color: #fff">Equipo de Estética</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 dEqImpla" data-aos="fade-left" data-aos-duration="1750">
+                <img id="myImg3" src="imagenes/equipoImplantes.jpg" alt="foto del equipo de implantes" class="img-fluid puntero">
+                <div id="modal3" class="modal" style="background-color: rgba(0, 0, 0, 0.8);">
+                    <!-- botón de cierre del modal -->
+                    <span class="close3">&times;</span>
+                    <!-- contenido del modal -->
+                    <img class="modal-contentImpla" id="img03">
+                    <!-- título del modal -->
+                    <div id="caption">
+                        <p class="text-center fs-3 mt-3 pFotoImpla" style="color: #fff">Dr. Soto y Dr. Barrientos. Y las asistentes, Karol, Nidia, Nicole y Kattia</p>
+                        <p class="text-center fs-2 pFotoImpla1" style="color: #fff">Equipo de Implantes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- sección footer -->
+    <footer class="mt-5" style="background: rgb(53,205,214); background: linear-gradient(0deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%); ">
+        <section class="row">
+            <div class="col-12 col-xl-6">
+                <div class="row redesSoc">
+                    <p class="col-6 ps-5 pVisitenos">Visítenos en nuestras redes sociales</p>
+                    <!-- ícono facebook -->
+                    <div class="col-1 pt-1">
+                        <a href="https://www.facebook.com/ "><i class="fab fa-facebook btn-dark "></i></a>
+                    </div>
+                    <!-- ícono correo -->
+                    <div class="col-1 pt-3 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter" href="#" role="button">
+                            <p class="btn-matricula">
+                                <i class="fas fa-envelope-open-text btn-icono"></i></p>
+                        </a>
+                    </div>
+                    <!-- ícono teléfono -->
+                    <div class="col-1">
+                        <span itemscope=" " style="list-style: none" itemtype="http://schema.org/LocalBusiness">
+                                <span class="hvr-buzz" itemprop="telephone"
+                                ><a
+                                    class="btn btn-colorFooter"
+                                    href="tel:+50683467332"
+                                    style=" display: flex; justify-content: center; text-decoration: none;"
+                                    ><i class="fas fa-phone-volume btn-icono"></i></a>
+                                </span>
+                        <span itemprop="name" style="visibility: hidden"><!--Corporation--></span>
+                        </span>
+                    </div>
+                    <!-- ícono whatsapp -->
+                    <div class="col-1 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter hvr-buzz" href="https://api.whatsapp.com/send/?phone=50683467332&text&app_absent=0" role="button">
+                            <i class="fab fa-whatsapp btn-icono"></i>
+                        </a>
+                    </div>
+                    <!-- ícono instagram -->
+                    <div class="col-1">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram btn-dark"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 dDerechos">
+                <p class="pDerechos">Copyright &copy 2021 | Powered by <span class="sClinica"> Clínica Odontológica Universal</span> </p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/de67982c75.js " crossorigin="anonymous "></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({});
+    </script>
+
+    <script src="js/quienes.js"></script>
+    <script src="js/idiomaQuienes.js"></script>
+</body>
+
+</html>

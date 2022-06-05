@@ -1,0 +1,103 @@
+    .contLogo {
+        width: 50px;
+        height: 50px;
+        top: 57px;
+        left: 58px;
+        position: absolute;
+    }
+    
+    #box {
+        border: solid darkorange 3px;
+        margin-left: -3px;
+        margin-top: -3px;
+    }
+    
+    .letter {
+        display: inline-block;
+        opacity: 1;
+    }
+    
+    div {
+        display: inline-block;
+    }
+    
+    .dSepararPal {
+        margin-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .subTit {
+        font-size: 2.5rem;
+    }
+    
+    .subTitulo {
+        margin-top: 15rem;
+        /* margin-left: 20rem; */
+    }
+    
+    body {
+        background-image: url('/imagenes/imgPrincipal2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .dBoton {
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+    
+    .boton {
+        border: 3px solid#f7a35e;
+        border-radius: 25px;
+        /* border-image: linear-gradient(90deg, rgba(194, 62, 6, 1) 32%, rgba(247, 163, 94, 1) 69%)1; no funciona el border-radius con gradiente*/
+    }
+    
+    .boton a {
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    @media all and (max-width: 1199px) {
+        .subTit {
+            font-size: 1.8rem !important;
+        }
+        .subTitulo {
+            margin-left: 10rem;
+        }
+        .dSepararPal {
+            margin-right: 4.5rem;
+        }
+    }
+    
+    @media all and (max-width: 767px) {
+        .dSepararPal {
+            margin-right: 1.5rem;
+        }
+        .h1 {
+            font-size: 1.8rem;
+        }
+        .subTit {
+            font-size: 1.5rem !important;
+            margin-left: 0 !important;
+            text-align: center;
+        }
+    }
+    
+    @media all and (max-width: 575px) {
+        .h1 {
+            font-size: 1.5rem;
+        }
+        .subTit {
+            font-size: 1.3rem !important;
+            margin-left: 0 !important;
+            text-align: center;
+        }
+    }

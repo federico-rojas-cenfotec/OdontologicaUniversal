@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CARGA CSS de la LIBRERIA -->
+    <!-- librería aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- librería animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/scrolltop.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/icon" href="imagenes/favicon1.png">
+
+    <title>Clínica dental, página inicial del sitio web</title>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background: rgb(53,205,214);
+        background: linear-gradient(180deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%);">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="home.html">
+                    <img src="imagenes/logoPeq.png" alt="imagen del logo de la clínica">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse mIzq" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuHome" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-3 aMenuPrinc menuServicios" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item aMenuPrinc menuPrevencion" href="prevencion.html">Prevención</a></li>
+                                <li>
+                                    <a class="dropdown-item aMenuPrinc menuImplante" href="implantes.html">Implantes</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item aMenuPrinc menuEstetica" href="estetica.html">Estética</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuQuienes" href="quienes.html">Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuSonrisas" href="sonrisas.html"><i class="fas fa-plus"></i> Sonrisas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aMenuPrinc menuCitas" href="citas.html">Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menuRegresar" style="color: black !important;" href="index.html" alt="botón para regresar al index del sitio">Regresar</a>
+                        </li>
+                        <div class="langWrap d-flex">
+                            <li class="nav-item me-3 lIdioma">
+                                <a class="nav-link" href="#" language='espanish' alt="botón para idioma español"><img src="imagenes/es.webp" alt="español" height="20px"></a>
+                            </li>
+                            <li class="nav-item lIdioma">
+                                <a class="nav-link" href="#" language='english' alt="botón para idioma inglés"><img src="imagenes/eu.webp" alt="inglés" height="20px"></a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <!-- <form class="d-flex ">
+                        <input class="form-control me-2 " type="search " placeholder="Buscar " aria-label="Search ">
+                        <button class="btn btn-outline-success " type="submit ">Buscar</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sección principal título y foto -->
+    <section class="tituloPrinc container-fluid ">
+        <div class="row ">
+            <h1 class="animate__animated animate__backInLeft text-center fw-bold mt-5 mb-5 logoText">Clínica Odontológica Universal</h1>
+            <img src="imagenes/imgPrincipal.jpg " class="img-fluid col-12 " alt="foto principal sonrisa de una joven e instrumentos más usados por el dentista ">
+            <p class="animate__animated animate__backInRight fw-bold fs-2 tp2">... sonrisas que enamoran</p>
+        </div>
+    </section>
+
+    <!-- sección de servicios -->
+    <section class="serv container ">
+        <h2 class="fw-bold mt-5 ms-5 titServicios" id="serv">Servicios</h2>
+        <hr class="raya mb-5 ">
+
+        <!-- subsección de cards de los servicios -->
+        <div class="row d-flex justify-content-around ">
+            <div class="col-6 col-md-3 mb-sm-5 mb-md-0 ">
+                <div class="card text-center ">
+                    <div class="card-body ">
+                        <img src="imagenes/prevencion-dental.png " class="card-img-top " alt="imagen de prevención dental ">
+                        <a href="prevencion.html " class="btn btn-primary btn-lg fs-3 aPrevencion">Prevención dental</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-sm-5 mb-md-0 ">
+                <div class="card text-center ">
+                    <div class="card-body ">
+                        <img src="imagenes/implantes-dentales.png " class="card-img-top " alt="imagen de implantes dentales ">
+                        <a href="implantes.html " class="btn btn-primary btn-lg fs-3 aImplante">Implantes dentales</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-sm-5 mb-md-0 ">
+                <div class="card text-center ">
+                    <div class="card-body ">
+                        <img src="imagenes/odontologia-estetica.png " class="card-img-top " alt="imagen de odontología estética ">
+                        <a href="estetica.html " class="btn btn-primary btn-lg fs-3 aEstetica">Estética dental</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección de testimonios -->
+    <section class="serv container ">
+        <h2 class="fw-bold mt-5 ms-5 titTestimonios">Testimonios</h2>
+        <hr class="raya mb-5 ">
+
+        <div class="row d-flex justify-content-around fondoTesti ">
+            <!-- testimonio de Alvaro -->
+            <div class="col-6 col-md-3 mb-sm-5 mb-md-0" style="cursor: pointer">
+                <div class="card text-center" onmouseover="tarjeta1()" onmouseout="tarjeta11()" id="tarj1" style="display:block;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500 ">
+                    <div class="card-body">
+                        <img src="imagenes/jovenSonriente.png" class="card-img-top" alt="foto de Álvaro Alvarado que testimonia">
+                        <p class="card-text fs-3 mt-3">Álvaro Alvarado</p>
+                        <p class="card-text fs-3">San José</p>
+                    </div>
+                </div>
+                <div class="card text-center" id="tarj11" style="display:none;">
+                    <div class="card-body">
+                        <img src="imagenes/jovenSonrientePeq.png" class="card-img-top" style="width: 18rem" alt="foto de Álvaro Alvarado que testimonia">
+                        <p class="card-text fs-3 mt-3 pAlvaro1">Hola soy Álvaro!</p>
+                        <p class="card-text fs-3 pAlvaro2">Esta gran sonrisa expresa muchos años de frustración y de ocultar mi boca. Gracias a la Clínica Universal hoy disfruto reír a más no poder.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- testimonio de Heily -->
+            <div class="col-6 col-md-3 mb-sm-5 mb-md-0" style="cursor: pointer">
+                <div class="card text-center" onmouseover="tarjeta2()" onmouseout="tarjeta21()" id="tarj2" style="display:block;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+                    <div class="card-body">
+                        <img src="imagenes/senoraSonriente.png" class="card-img-top" alt="foto de Heily Hidalgo que testimonia">
+                        <p class="card-text fs-3 mt-3">Heily Hidalgo</p>
+                        <p class="card-text fs-3">Escazú</p>
+                    </div>
+                </div>
+                <div class="card text-center" id="tarj21" style="display:none;">
+                    <div class="card-body">
+                        <img src="imagenes/senoraSonrientePeq.png" class="card-img-top" style="width: 18rem;" alt="foto de Heily Hidalgo que testimonia">
+                        <p class="card-text fs-3 mt-3 pHeily1">En la clínica obtuve la sonrisa que siempre quise y a mi edad. Su trato es personal y amable.</p>
+                        <p class="card-text fs-3 pHeily2">100% recomendadísimos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center masSonrisas">
+                <p class="text-center mt-3 me-3 pMasSonrisas fs-3">Querés conocer más</p>
+                <p style="font-size: 3rem;">
+                    <a href="sonrisas.html" alt="enlace para ir a la página de más sonrisas"><i class="far fa-smile"></i></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Conozca nuestra clínica -->
+    <section class="container conoce">
+        <h2 class="fw-bold mt-5 ms-5 hConozca">Conozca nuestra clínica</h2>
+        <hr class="raya mb-5">
+
+        <div class="tab mt-3 text-center mb-5">
+            <button class="tablinks btn btn-outline-primary fs-3 me-3 bConozcanos" onclick="opciones(event, 'conozcanos')">Conózcanos</button>
+            <button class="tablinks btn btn-outline-primary fs-3 me-3 bMision" onclick="opciones(event, 'mision')">Misión</button>
+            <button class="tablinks btn btn-outline-primary fs-3 me-3 bVision" onclick="opciones(event, 'vision')">Visión</button>
+            <button class="tablinks btn btn-outline-primary fs-3 me-3 bValores" onclick="opciones(event, 'valores')">Valores</button>
+        </div>
+        <!-- El equipo completo -->
+        <div id="conozcanos" class="row container tabcontent justify-content-around">
+            <h3 class="col-12 text-center fs-1 fw-bold mb-5 pEquipo">Nuestro equipo humano</h3>
+            <p class="col-4 fs-3 pEquipoDescrip">
+                Somos una Clínica Odontológica en Costa Rica, conformado por un grupo de odontólogos enfocados en brindar a los pacientes soluciones efectivas y adecuadas para sus necesidades dentales. Contamos con las herramientas odontológicas más avanzadas tecnológicamente,
+                para agilizar su diagnóstico y crear el mejor plan de tratamiento dental para usted.
+            </p>
+            <img src="imagenes/equipoCompleto.png" alt="foto del personal completo de la clínica" class="img-fluid col-6">
+        </div>
+        <!-- Misión -->
+        <div id="mision" class="row container tabcontent justify-content-around">
+            <h3 class="col-12 text-center fs-1 fw-bold mb-5 hMision">Misión</h3>
+            <img src="imagenes/mision.png" alt="imagen de la misión de la clínica" class="img-fluid col-2 mt-5">
+            <p class="col-4 fs-3 mt-5 pt-3 pMisionDescrip">
+                Somos un grupo de profesionales en constante formación. Nuestro objetivo es proporcionar unos cuidados bucales óptimos a nuestros pacientes. Buscamos conocer perfectamente cada caso y el entorno que lo rodea, ofrecer una atención personalizada e individualizada
+                y alcanzar la excelencia en nuestra labor. Intentamos, asimismo, que el tratamiento dental interfiera lo mínimo posible en la vida diaria.
+            </p>
+        </div>
+        <!-- Visión -->
+        <div id="vision" class="row container tabcontent justify-content-around">
+            <h3 class="col-12 text-center fs-1 fw-bold mb-5 hVision">Visión</h3>
+            <p class="col-4 fs-3 mt-5 pt-3 pVisionDescrip">
+                Queremos que se nos conozca por nuestro profesionalismo y trato. Ser referentes en San José, Costa Rica por nuestra forma de trabajar y nuestra cercanía con los pacientes.
+            </p>
+            <img src="imagenes/vision.png" alt="imagen de vision de la clínica" class="img-fluid col-2 mt-5">
+        </div>
+        <!-- Valores -->
+        <div id="valores" class="row container tabcontent justify-content-around">
+            <h3></h3>
+            <img src="imagenes/valores.png" alt="imagen de valores de la clínica" class="img-fluid col-2 mt-1">
+            <div class="col-4 mt-5 pt-3">
+                <p class="fs-3 pValores">
+                    Los<span class="fw-bold"> valores</span> de nuestra clínica son:
+                </p>
+                <br>
+                <p class="fs-3 pValores1"><span class="fw-bold">Profesionales.</span> Hacemos nuestro mejor esfuerzo en cada intervención</p>
+                <p class="fs-3 pValores2"><span class="fw-bold">Cercanos.</span> Estamos siempre a disposición de nuestros clientes, sin importar hora ni día.</p>
+                <p class="fs-3 pValores3"><span class="fw-bold">Honestos.</span> Lo que decimos al cliente eso hacemos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección del vídeo -->
+    <section id="sct-video" class="container fondo2">
+        <h2 class="fw-bold mt-5 ms-5 hRecomenda">Recomendaciones</h2>
+        <hr class="raya mb-5">
+
+        <!-- Aquí va el código del vídeo -->
+        <div class="row text-center">
+            <div id="container">
+                <p class="text-dark fs-3 pConsejos">Consejos para entender la salud bucal</p>
+                <div class="pt-2"></div>
+
+                <!-- carga la función ejecutar con 2 parámetros -->
+                <button id="boton" onclick="ejecutar('video', 'youtube')" class="botonVideo cursor btn btn-lg btn-outline-primary fs-3 bVideo">Ver vídeo</button>
+            </div>
+            <!--  -->
+            <div id="video" class="esconderVideo" onclick="ocultar('video', 'youtube')">
+                <div class="lightbox-container">
+                    <div class="lightbox-content">
+                        <button onclick="ocultar('video', 'youtube')" class="lightbox-close cursor mt-5 mb-1 btn btn-dark fs-3 bVideoCerrar">Cerrar</button>
+                        <div class="video-container">
+
+                            <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/n8Y1S8xgOhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mt-5" style="background: rgb(53,205,214); background: linear-gradient(0deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%); ">
+        <section class="row">
+            <div class="col-12 col-xl-6">
+                <div class="row redesSoc">
+                    <p class="col-6 ps-5 pVisitenos">Visítenos en nuestras redes sociales</p>
+                    <!-- ícono facebook -->
+                    <div class="col-1 pt-1">
+                        <a href="https://www.facebook.com/ "><i class="fab fa-facebook btn-dark "></i></a>
+                    </div>
+                    <!-- ícono correo -->
+                    <div class="col-1 pt-3 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter" href="#" role="button">
+                            <p class="btn-matricula">
+                                <i class="fas fa-envelope-open-text btn-icono"></i></p>
+                        </a>
+                    </div>
+                    <!-- ícono teléfono -->
+                    <div class="col-1">
+                        <span itemscope=" " style="list-style: none" itemtype="http://schema.org/LocalBusiness">
+                                <span class="hvr-buzz" itemprop="telephone"
+                                ><a
+                                    class="btn btn-colorFooter"
+                                    href="tel:+50683467332"
+                                    style=" display: flex; justify-content: center; text-decoration: none;"
+                                    ><i class="fas fa-phone-volume btn-icono"></i></a>
+                                </span>
+                        <span itemprop="name" style="visibility: hidden"><!--Corporation--></span>
+                        </span>
+                    </div>
+                    <!-- ícono whatsapp -->
+                    <div class="col-1 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter hvr-buzz" href="https://api.whatsapp.com/send/?phone=50683467332&text&app_absent=0" role="button">
+                            <i class="fab fa-whatsapp btn-icono"></i>
+                        </a>
+                    </div>
+                    <!-- ícono instagram -->
+                    <div class="col-1">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram btn-dark"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 dDerechos">
+                <p class="pDerechos">Copyright &copy 2021 | Powered by <span class="sClinica"> Clínica Odontológica Universal</span> </p>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/de67982c75.js " crossorigin="anonymous "></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({});
+    </script>
+    <!-- carga la función topFunction JS (JQUERY) data-scroll es un selector que tiene el file JS -->
+    <a id="flechabtn " class="goto-top " href="#inicio " title="Ir al inicio " onclick="topFunction() " data-scroll>
+        <i class="fas fa-arrow-circle-up "></i>
+    </a>
+
+    <!-- Requisito de cargar para esconder el botón Scrolltop por medio de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <!-- el archivo smooth-scroll.min está minimizado -->
+    <script src="js/smooth-scroll.min.js "></script>
+
+    <!-- controlar el desplazamiento suave -->
+    <script src="js/elastico.js "></script>
+
+    <!-- controlar el vídeo -->
+    <script src="js/video.js "></script>
+
+    <script src="js/home.js "></script>
+
+    <script src="js/idioma.js "></script>
+
+
+</body>
+
+</html>
+
+</html>

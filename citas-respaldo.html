@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- letras de google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- librería anime -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- librería hover para animaciones pequeñas de íconos, botones y semejantes  -->
+    <link href="css/hover-min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/citas.css">
+    <link rel="icon" type="image/icon" href="imagenes/favicon1.png">
+
+    <title>Clínica dental, sitio para obtener citas con los dentistas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(53,205,214);
+        background: linear-gradient(180deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%);">
+            <div class="container-fluid">
+                <a class="navbar-brand hvr-wobble-horizontal" href="home.html">
+                    <img src="imagenes/logoPeq.png" alt="imagen del logo de la clínica">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse mIzq" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuHome" aria-current="page" href="home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-3 aMenuPrinc menuServicios" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item aMenuPrinc menuPrevencion" href="prevencion.html">Prevención</a></li>
+                                <li>
+                                    <a class="dropdown-item aMenuPrinc menuImplante" href="implantes.html">Implantes</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item aMenuPrinc menuEstetica" href="estetica.html">Estética</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuQuienes" href="quienes.html">Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 aMenuPrinc menuSonrisas" href="sonrisas.html"><i class="fas fa-plus"></i> Sonrisas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aMenuPrinc menuCitas" href="citas.html">Citas</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link menuRegresar" style="color: black !important;" href="index.html" alt="botón para regresar al index del sitio">Regresar</a>
+                        </li> -->
+                        <div class="langWrap d-flex">
+                            <li class="nav-item lIdioma">
+                                <a class="nav-link" href="#" language='espanish' alt="botón para idioma español"><img src="imagenes/es.webp" alt="español" height="20px"></a>
+                            </li>
+                            <li class="nav-item lIdioma">
+                                <a class="nav-link" href="#" language='english' alt="botón para idioma inglés"><img src="imagenes/eu.webp" alt="inglés" height="20px"></a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <!-- <form class="d-flex ">
+                        <input class="form-control me-2 " type="search " placeholder="Buscar " aria-label="Search ">
+                        <button class="btn btn-outline-success " type="submit ">Buscar</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sección principal título y foto -->
+    <section class="tituloPrinc container">
+        <div class="row">
+            <h1 class="col-12 animate__animated animate__backInLeft text-center fw-bold mt-3 mb-3 logoText">Clínica Odontológica Universal</h1>
+        </div>
+    </section>
+
+    <!-- sección de formulario -->
+    <section class="container sct-formulario">
+        <div class="row d-flex justify-content-center">
+            <div class="fotoFondo col-12 col-md-10 img-fluid">
+                <div class="mt-3 sct-form">
+                    <h2 class="mb-5 fw-bold hContactenos">Contáctenos para obtener su cita</h2>
+                    <form name="datosCliente" method="post">
+                        <div class="form-group">
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5 lNombre" for="nombreTXT">Nombre</label>
+                                <input class="col-6 col-md-4" type="text" name="c1" id="nombreTXT" onkeyup="mayusculas(this);" required>
+                            </div>
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5 lApellido" for="apellidoTXT">Apellido</label>
+                                <input class="col-6 col-md-4" type="text" name="c2" id="apellidoTXT" onkeyup="mayusculas(this);" required>
+                            </div>
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5 lCorreo" for="correo">Correo</label>
+                                <input class="col-6 col-md-4" type="email" name="c3" id="correo" placeholder="Anote su correo - @" required>
+                            </div>
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5 lTel" for="tel">Teléfono</label>
+                                <input class="col-6 col-md-4" type="tel" name="c4" placeholder="Por favor ingrese su número (25105151)" id="tel" pattern="[0-9]{4}[0-9]{4}" required>
+                            </div>
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5" for="wh">Whatsapp</label>
+                                <input class="col-6 col-md-4" type="tel" name="c5" placeholder="Por favor ingrese su número (85001234)" id="wh" pattern="[0-9]{4}[0-9]{4}" required>
+                            </div>
+                            <div class="row mb-5 d-flex justify-content-around">
+                                <label class="col-3 fs-3 fw-bold me-5 lCita" for="cita">Día de la cita</label>
+                                <input class="col-6 col-md-4" type="date" name="c6" id="cita" required>
+                            </div>
+                            <div class="row d-flex justify-content-around">
+                                <label class="form-label col-3 fs-3 fw-bold me-5 lMensaje" for="mensaje">Mensaje</label>
+                                <textarea class="form-control-sm col-6 col-md-4" rows="4" name="c7" id="mensaje" placeholder="Describa su necesidad (máximo 200 caracteres)" required></textarea>
+                            </div>
+
+                            <!-- parte donde se elige la especialidad de la cita odontológica -->
+                            <div class="row mt-5 mb-5">
+                                <div class="col-12 col-md-4" alt="espacio para elegir la especialidad de la cita a solicitar">
+                                    <label class="col-12 fs-3 fw-bold mt-5 lEspecialidad" for="espec">Elija la especialidad</label>
+
+                                    <label class="col-6 mt-3 me-md-5 fs-3 fw-bold ps-2 lPrevencion" for="preve">Prevención</label>
+                                    <input type="radio" name="c8" id="preve">
+
+                                    <label class="col-6 mt-3 me-md-5 fs-3 fw-bold ps-2 lImplantes" for="impla">Implantes</label>
+                                    <input type="radio" name="c8" id="impla">
+
+                                    <label class="col-6 mt-3 me-md-5 fs-3 fw-bold ps-2 lEstetica" for="estet">Estética</label>
+                                    <input type="radio" name="c8" id="estet">
+
+                                    <div class="col-12 text-center">
+                                        <a class="btn btn-outline-primary btn-lg fs-3 mt-3 mb-5 iMostrar" type="button" value="Mostrar" onclick="mostrar()">Mostrar</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center" alt="foto de la especialidad elegida">
+                                    <img src="imagenes/prevencion.jpg" alt="foto de niña en tratamiento de prevención dental" class="img-fluid" style="display: none;" id="prevencionFoto">
+                                    <img src="imagenes/implantes.jpg" alt="foto de implante dental" class="img-fluid" style="display: none;" id="implantesFoto">
+                                    <img src="imagenes/estetica.jpg" alt="foto de mjer en tratamiento de estética dental" class="img-fluid" style="display: none;" id="esteticaFoto">
+                                </div>
+                                <div class="col-12 col-md-4" alt="reseña de la especialidad solicitada">
+                                    <p id="pPreve" class="fs-3 pt-3 ps-5 pPreveDescrip" style="display: none;">Nuestro servicio de prevención dental, busca solucionar los problemas primarios que puede presentar un paciente en su boca, dientes u otras áreas relacionadas. Son procedimientos sencillos que abarcan el tratamiento
+                                        de caries y la elaboración de calzas hasta limpiezas dentales.</p>
+                                    <p id="pImpla" class="fs-3 pt-3 ps-5 pImplaDescrip" style="display: none;">Los implantes dentales son aditamentos, como raíces artificiales, creados para sustituir dientes ausentes o perdidos por cualquier causa, capaces de integrarse hasta el punto de convivir de forma sana y totalmente natural
+                                        con el resto de los tejidos de la boca. Los implantes dentales se colocan, de manera quirúrgica, en los huesos de la mandíbula o del maxilar.</p>
+                                    <p id="pEstet" class="fs-3 pt-3 ps-5 pEstetDescrip" style="display: none;">La odontología estética busca embellecer su boca y engloba todos aquellos tratamientos que corrigen las imperfecciones de nuestras sonrisas y por tanto, requieren tratamientos multidisciplinarios en que han de intervenir
+                                        especialistas ampliamente formados en cada una de las áreas de la odontología.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a type="submit" class="btn btn-outline-primary btn-lg fs-3 aEnviar" onclick="validar_datos()">Enviar datos</a>
+                        </div>
+                    </form>
+                    <p class="fs-3 fw-bold mt-3 text-danger pNota">* Todos los campos deben ser completados debidamente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- sección del footer -->
+    <footer class="mt-5" style="background: rgb(53,205,214); background: linear-gradient(0deg, rgba(53,205,214,0.75) 42%, rgba(147,226,231,0.5) 76%);">
+        <section class="row">
+            <div class="col-12 col-xl-6">
+                <div class="row redesSoc">
+                    <p class="col-6 ps-5 pVisitenos">Visítenos en nuestras redes sociales</p>
+                    <!-- ícono facebook -->
+                    <div class="col-1 pt-1">
+                        <a href="https://www.facebook.com/ "><i class="fab fa-facebook btn-dark "></i></a>
+                    </div>
+                    <!-- ícono correo -->
+                    <div class="col-1 pt-3 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter" href="#" role="button">
+                            <p class="btn-matricula">
+                                <i class="fas fa-envelope-open-text btn-icono"></i></p>
+                        </a>
+                    </div>
+                    <!-- ícono teléfono -->
+                    <div class="col-1">
+                        <span itemscope=" " style="list-style: none" itemtype="http://schema.org/LocalBusiness">
+                                <span class="hvr-buzz" itemprop="telephone"
+                                ><a
+                                    class="btn btn-colorFooter"
+                                    href="tel:+50683467332"
+                                    style=" display: flex; justify-content: center; text-decoration: none;"
+                                    ><i class="fas fa-phone-volume btn-icono"></i></a>
+                                </span>
+                        <span itemprop="name" style="visibility: hidden"><!--Corporation--></span>
+                        </span>
+                    </div>
+                    <!-- ícono whatsapp -->
+                    <div class="col-1 d-flex justify-content-center">
+                        <a class="btn btn-colorFooter hvr-buzz" href="https://api.whatsapp.com/send/?phone=50683467332&text&app_absent=0" role="button">
+                            <i class="fab fa-whatsapp btn-icono"></i>
+                        </a>
+                    </div>
+                    <!-- ícono instagram -->
+                    <div class="col-1">
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram btn-dark"></i></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 dDerechos">
+                <p class="pDerechos">Copyright &copy 2021 | Powered by<span class="sClinica"> Clínica Odontológica Universal</span></p>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        function mayusculas(e) {
+            e.value = e.value.toUpperCase();
+        }
+    </script>
+
+
+    <!--  -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://kit.fontawesome.com/de67982c75.js " crossorigin="anonymous "></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- enlace de archivo de .js -->
+    <script src="js/citas.js"></script>
+    <script src="js/idiomaCitas.js"></script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>

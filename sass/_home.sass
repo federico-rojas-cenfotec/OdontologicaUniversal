@@ -1,0 +1,257 @@
+html
+    font-size: 10px
+body
+    font-family: $tipografia
+    overflow-x: hidden
+header
+    ul
+        font-size: 1.6rem
+    nav
+        .mIzq
+            ul
+                a
+                    color: $ladrillo !important
+                    font-weight: 700
+        .aMenuPrinc:hover
+            border-bottom: 3px solid #000000
+            color: #000000 !important
+            font-size: 1.8rem
+
+
+//Sección de .tituloPrinc, i.e Imagen principal de home.html 
+.tituloPrinc
+    div
+        img
+            height: 88vh
+            padding: 0
+        h1
+            color: #fff
+            position: absolute
+            left: 0
+            top: 15%
+        p
+            color: #000000
+            position: absolute
+            padding-left: 25rem
+            top: 60%
+        @media all and ( min-width: 576px )
+            h1
+                font-size: 3rem
+                top: 65%
+            p
+                position: absolute
+                padding-left: 39.5rem
+                top: 65%
+        @media all and ( min-width: 768px )
+            p
+                position: absolute
+                padding-left: 42.5rem
+                top: 45%
+        @media all and ( min-width: 992px )
+            p
+                position: absolute
+                padding-left: 52.5rem
+        @media all and ( min-width: 1200px )
+            h1
+                font-size: 5rem
+            p
+                position: absolute
+                padding-left: 65rem
+        @media all and ( min-width: 1400px )
+            p
+                position: absolute
+                padding-left: 75rem
+
+//Sección de .serv, i.e Servicios
+.serv
+    h2
+        font-size: 4rem
+        cursor: pointer   
+    hr
+        color: $ladrillo
+
+    //Sección de Testimonios
+.fondoTesti
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(76,80,143,0.25) 99%)
+    .card-body
+        padding-left: 0
+        padding-right: 0
+    .masSonrisas
+        p:hover
+            color: $ladrillo
+            text-decoration: underline black                
+
+    /** Sección de Conózcanos **/
+/** controla el button de cada concepto **/
+.conoce, #sct-video
+    h2
+        font-size: 4rem
+.tab
+    transition: 0.3s
+.tab button:hover
+    /** background-color: $ladrillo **/
+    color: #fff
+.tab button.active
+    background-color: $celeste
+    color: #000
+    font-weight: 700
+
+/** controla cada div de c/u de los conceptos **/
+.tabcontent
+    display: none
+    padding: 6px 12px
+    border-top: none
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(76,80,143,0.1) 99%)
+.tabcontent
+    animation: efect1 2s
+
+@keyframes efect1
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+/** sección del vídeo **/
+.esconderVideo
+    display: none
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(76,80,143,0.1) 99%)
+
+/* sección del footer*/
+footer
+    .dDerechos
+        display: flex
+        align-items: center
+        justify-content: center
+    .pDerechos
+        font-size: 1.6rem
+        text-align: center
+    .redesSoc
+        display: flex
+        align-items: center
+        justify-content: space-between
+        p
+            font-size: 1.6rem
+        i
+            font-size: 4rem
+
+/* quienes.html*/
+.tituloPrincQ
+    margin-top: 8rem
+    div        
+        h1
+            background-color: rgba(255, 255, 255, 1)
+            color: #000000
+        @media all and ( min-width: 576px )
+            h1
+                font-size: 3rem
+        @media all and ( min-width: 1200px )
+            h1
+                font-size: 5rem            
+.subTituloPrincQ
+    font-size: 4rem
+.sct-fotos
+    display: flex
+    justify-content: center
+
+.dEqImpla
+    display: flex
+    align-self: center
+.puntero
+    cursor: pointer
+.close3,
+.close2,
+.close1
+    position: absolute
+    top: 1rem
+    right: 5rem
+    color: #fff
+    font-size: 6rem
+    font-weight: 700
+    transition: 0.6s
+.close3:hover,
+.close2:hover,
+.close1:hover
+    color: $ladrillo
+    cursor: pointer
+    font-size: 8rem   
+.modal-content
+    margin: auto
+    display: block
+    margin-top: 40px
+    width: 70%
+.modal-contentImpla
+    margin: auto
+    display: block
+    margin-top: 40px
+    width: 50%
+
+    /* sonrisas.html*/
+
+#sonria
+    /** background-image: url('/img/imgPrincipal2.jpg') **/
+    background-repeat: no-repeat
+    background-position: center left
+    background-size: cover
+    height: 100vh
+    width: 100%
+
+.animate__animated.animate__backInLeft
+    --animate-duration: 1.5s
+    --anime-delay: 1s
+.animate__animated.animate__backInRight
+    --animate-duration: 1.5s
+    --anime-delay: 1s
+.tituloPrincS
+    margin-top: 8rem
+    div        
+        h1
+            background-color: rgba(255, 255, 255, 1)
+            color: #000000
+        @media all and ( min-width: 576px )
+            h1
+                font-size: 3rem
+        @media all and ( min-width: 1200px )
+            h1
+                font-size: 5rem            
+.contResultado
+    width: 557px
+    height: 335px
+    text-align: center
+    display: block
+
+@media all and (min-width: 1200px)
+    .img-media:nth-child(2)
+        order: -1
+
+/* sección del acordeón de estetica.html */
+.accordion    
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    text-align: left
+    border: 2px #000 solid
+    /*outline: none;*/
+    transition: 0.4s
+
+.active,
+.accordion:hover
+    background-color: $naranja
+
+/** rgb(16, 105, 141) **/
+.panel
+    padding: 0 18px
+    display: none
+    overflow: hidden
+    border: 2px #000 solid
+    /*se agregaron para la animacion del panel*/
+    max-height: 0
+    transition: max-height 2s ease-out
+
+.accordion:after {
+    /*content: '\02C5';*/
+    /*content: '\25BC';*/
+    content: "\02795"
+    font-size: 200px
+    color: #000
+    float: right
+    margin-left: 5px

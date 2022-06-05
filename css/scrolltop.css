@@ -1,0 +1,18 @@
+html {
+    /*comportamiento suave del scroll*/
+    scroll-behavior: smooth;
+}
+
+
+/*posiciona el boton scrolltop a la derecha y le brinda posicion fija = fixed*/
+
+.goto-top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+.goto-top i {
+    color: #c23e06;
+    font-size: 4rem;
+}
